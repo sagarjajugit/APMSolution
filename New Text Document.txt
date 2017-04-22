@@ -1,0 +1,2 @@
+http://www.c-sharpcorner.com/UploadFile/abhikumarvatsa/database-first-approach-in-entity-framework/
+http://www.itorian.com/2012/08/code-first-approach-in-entity-framework.html#.UCZ4Op0gd94
