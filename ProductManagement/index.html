@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Acme Product management</title>
+
+    <!--Library scripts-->
+    <script src="js/jquery.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="app/app.js"></script>
+    <script src="js/angular-resource.js"></script>
+    <script src="js/angular-mocks.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ui-utils.js"></script>
+    <script src="js/ui-bootstrap-tpls-0.11.0.js"></script>
+    <script src="js/toastr.js"></script>
+    <script src="js/angular-charts.min.js"></script>
+    <script src="js/d3.js"></script>    
+
+    <script src="app/products/productListCtrl.js"></script>
+    <script src="app/products/ProductDetailCtrl.js"></script>
+    <script src="app/products/productEditCtrl.js"></script>
+    <script src="app/prices/PriceAnalyticsCtrl.js"></script>
+
+    <script src="common/services/common.services.js"></script>
+    <script src="common/services/productResource.js"></script>
+    <script src="common/services/productResourceMock.js"></script>
+    <script src="common/services/productService.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/angular-messages.js"></script>
+    
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/toastr.css" rel="stylesheet" />
+</head>
+
+<body ng-app="productManagement">
+    
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <a data-ui-sref="home" class="navbar-brand"> Acme Product Management</a>
+            <div class="navbar-header">
+                <button type="button"
+                        class="navbar-toggle"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a data-ui-sref="productList">Product List</a></li>
+                    <li><a data-ui-sref="productEdit.info({productId:0})">
+                        <i class="glyphicon glyphicon-plus">
+                        Add Product</i>
+                        </a>
+                    </li>
+                    <li><a ui-sref="priceAnalytics">Price Analytics</a></li>
+                </ul>
+             </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div data-ui-view></div>
+    </div>
+</body>
+</html>
